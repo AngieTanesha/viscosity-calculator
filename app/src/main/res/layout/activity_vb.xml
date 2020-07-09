@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/vbDetailStaticTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:paddingBottom="30dp"
+            style="@style/h2Bold"
+            android:textColor="@color/colorWhite"
+            android:text="Viscosity Blending (mm^2/s)"/>
+
+        <TextView
+            android:id="@+id/vbAnswerStaticTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            style="@style/h1Bold"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/colorWhite"
+            android:text="59.85"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop = "40dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vb_Volume_StaticTextView"
+                style="@style/h4"
+                android:layout_width="110dp"
+                android:layout_height="55dp"
+                android:paddingRight="10dp"
+                android:text="Volume (L)"
+                android:textColor="@color/colorWhite" />
+
+            <EditText
+                android:id="@+id/vb_Volume_EditText"
+                android:textAlignment="viewStart"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/colorWhite"
+                android:inputType="text"
+                style="@style/h4"
+                android:hint="23, 25, 20"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop = "10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vb_Viscosity_StaticTextView"
+                android:layout_width="110dp"
+                android:layout_height="55dp"
+                android:paddingRight="10dp"
+                style="@style/h4"
+                android:textColor="@color/colorWhite"
+                android:text="Viscosity (mm^2/s)"/>
+
+            <EditText
+                android:id="@+id/vb_Viscosity_EditText"
+                android:textAlignment="viewStart"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/colorWhite"
+                android:inputType="text"
+                style="@style/h4"
+                android:hint="50, 60, 75"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/vbCalculateButton"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Calculate VB"/>
+    </LinearLayout>
+
+</ScrollView>
